@@ -20,17 +20,19 @@
 </head> 
 <!-- head iz html nam nije potreban moze i drugacije i bolje-->
 
+
+
+    <main role="main" class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+
 <?php
     
-    
-    
-   
-    
 
-    
-    
-
-        $sql = "SELECT * FROM posts ORDER BY created_at DESC";//selektuj sve iz tabele /posts/ i poredjaj po created_at od zadnjeg do prvog
+        $sql = "SELECT * FROM posts ORDER BY created_at DESC"; //uzmi sve postoven iz tabele
         $statement = $connection->prepare($sql);
 
         $statement->execute();
@@ -59,11 +61,7 @@
 
 
 ?>
-<main role="main" class="container">
 
-<div class="row">
-
-    <div class="col-sm-8 blog-main">
 
          
 
@@ -91,8 +89,9 @@
 
 
 
- <!-- <div class="blog-post">
-//                 <!-- <h2 class="blog-post-title">Sample blog post</h2>
+   <!-- <div class="blog-post">  -->
+                   <!-- <div class="blog-post">
+                       <h2 class="blog-post-title">Sample blog post</h2>
 //                 <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
 //                 <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
@@ -122,9 +121,9 @@
 //                     <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
 //                 </ol>
 //                 <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p> -->
-//                 </div> blog-post -->
+                 <!-- </div> blog-post  -->
 
-// <!-- <div class="blog-post">
+ <!-- <div class="blog-post">
 //     <h2 class="blog-post-title">Another blog post</h2>
 //     <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
 
@@ -134,9 +133,9 @@
 //     </blockquote>
 //     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
 //     <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-// </div><!-- /.blog-post -->
+// </div><! /.blog-post -->
 
-// <!-- <div class="blog-post">
+ <!-- <div class="blog-post">
 //     <h2 class="blog-post-title">New feature</h2>
 //     <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 
