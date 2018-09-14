@@ -2,7 +2,7 @@
     
     $servername = "127.0.0.1";
     $username = "root";
-    $password = "vivify";
+    $password = "rootpasswordgiven";
     $dbname = "zavrsni_rad";
 
 
